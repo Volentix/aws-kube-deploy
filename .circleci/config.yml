@@ -10,7 +10,7 @@ jobs:
           docker build -t volentixlabs/aws-kube-deploy:$TAG .
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
           docker push volentixlabs/aws-kube-deploy:$TAG && sleep 10
-  workflows:
+workflows:
   version: 2
   dockerfile_aws_kube:
     jobs:
