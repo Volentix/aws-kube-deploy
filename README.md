@@ -15,14 +15,12 @@ This repo is for the building of a Docker image that will be used as a circle ci
 
 In short, you can use this image to deploy onto kubernetes on aws in a simple and clean way. Additionally, the build cycle is condensed due to the containerg image having all the required dependancies rather than having to download for each build.
 
-For an example on how to implement the entire build pipeline, including this docker image, please see the <REPO NAME HERE> repository.
+For an example on how to implement the entire build pipeline, including this docker image, please see the [CircleCi Demo Repository](https://github.com/Volentix/circlecidemo).
 
 ## Table of Contents
 
 - [Background](#background)
-- [Install](#install)
 - [Usage](#usage)
-- [API](#api)
 - [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
@@ -33,11 +31,12 @@ No image exists for organizations seeking to deploy into Kubernetes on AWS onlin
 
 ## Usage
 
-This repo is on the building of the container and so does not contain the how-to of integrating it. To see an example implementation, please go here: <REPO NAME HERE>
+This repo is on the building of the container and so does not contain the how-to of integrating it. To see an example implementation, please to the [CircleCi Demo Repository](https://github.com/Volentix/circlecidemo).
 
 If you want to fork this repo and run your own CircleCI builds, you will need to set the following 2 environmennt variable in CircleCi:
   * DOCKER_USER
   * DOCKER_PASSWORD
+
 Additionally, you will need to change the text 'volentixlabs/aws-kube-deploy' in [the .circleci/config.yml file](.circleci/config.yml) to your organization and project name.
 
 ## Maintainers
